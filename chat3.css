@@ -1,0 +1,130 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #111; /* Siyah arka plan rengi */
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    background-color: #222; /* Siyah arka plan rengi */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-list {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #333; /* Koyu gri renk */
+}
+
+.user-list h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #fff; /* Beyaz renk */
+}
+
+.user {
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: #444; /* Koyu gri arka plan rengi */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.user:hover {
+    background-color: #555; /* Biraz daha açık gri renk */
+}
+
+.chat-window {
+    flex: 3;
+    padding: 20px;
+}
+
+.chat-output {
+    height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #333; /* Koyu gri renk */
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #333; /* Koyu gri arka plan rengi */
+    color: #fff; /* Beyaz renk */
+}
+
+.message-input {
+    display: flex;
+    align-items: center;
+}
+
+#message-input {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid #333; /* Koyu gri renk */
+    border-radius: 5px 0 0 5px;
+    font-size: 1em;
+    color: #000; /* Siyah renk */
+}
+
+#submit {
+    padding: 12px 20px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.user-list .user {
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: #444; /* Koyu gri arka plan rengi */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff; /* Beyaz renk */
+}
+
+.user-list .user:hover {
+    background-color: #ffee00; /* Biraz daha açık gri renk */
+    color:#000; 
+}
+
+.message-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.message-container {
+    clear: both;
+    overflow: auto;
+}
+
+.sent {
+    display: block; /* Mesajları alt alta yerleştirir */
+    background-color: #6a4caf; /* Mesaj balonunun arka plan rengi */
+    color: #fff; /* Mesajın yazı rengi */
+    float: right; /* Mesajı sağa hizalar */
+    border-radius: 10px; /* Balonun kenar yuvarlaklığı */
+    padding: 10px; /* Balon içeriği ile kenar arasındaki boşluk */
+    margin-bottom: 10px; /* Mesajlar arasındaki boşluk */
+    clear: both; /* Mesajlar arasındaki sıralı düzeni sağlar */
+}
+
+.received {
+    background-color: #f2f2f2; /* Karşı tarafın mesaj balonunun arka plan rengi */
+    color: #000; /* Karşı tarafın mesajın yazı rengi */
+    display: block; /* Mesajları alt alta yerleştirir */
+    float: left; /* Mesajları sola hizalar */
+    border-radius: 10px; /* Balonun kenar yuvarlaklığı */
+    padding: 10px; /* Balon içeriği ile kenar arasındaki boşluk */
+    margin-bottom: 10px; /* Mesajlar arasındaki boşluk */
+    clear: both; /* Mesajlar arasındaki sıralı düzeni sağlar */
+}
+

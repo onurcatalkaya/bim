@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Günlük Ciro Takibi</title>
+    <link rel="stylesheet" href="main1.css">
+</head>
+<body>
+    <header>
+        <h1>Günlük Ciro Takibi</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form id="ciroForm">
+                <!-- Her gün için metin alanları -->
+                <label for="gun1">1. Gün:</label>
+                <input type="number" id="gun1" name="gun1" step="0.01">
+                <label for="gun2">2. Gün:</label>
+                <input type="number" id="gun2" name="gun2" step="0.01">
+                <label for="gun3">3. Gün:</label>
+                <input type="number" id="gun3" name="gun3" step="0.01">
+                <label for="gun4">4. Gün:</label>
+                <input type="number" id="gun4" name="gun4" step="0.01">
+                <label for="gun5">5. Gün:</label>
+                <input type="number" id="gun5" name="gun5" step="0.01">
+                <label for="gun6">6. Gün:</label>
+                <input type="number" id="gun6" name="gun6" step="0.01">
+                <label for="gun7">7. Gün:</label>
+                <input type="number" id="gun7" name="gun7" step="0.01">
+                <label for="gun8">8. Gün:</label>
+                <input type="number" id="gun8" name="gun8" step="0.01">
+                <label for="gun9">9. Gün:</label>
+                <input type="number" id="gun9" name="gun9" step="0.01">
+                <label for="gun10">10. Gün:</label>
+                <input type="number" id="gun10" name="gun10" step="0.01">
+                <label for="gun11">11. Gün:</label>
+                <input type="number" id="gun11" name="gun11" step="0.01">
+                <label for="gun12">12. Gün:</label>
+                <input type="number" id="gun12" name="gun12" step="0.01">
+                <label for="gun13">13. Gün:</label>
+                <input type="number" id="gun13" name="gun13" step="0.01">
+                <label for="gun14">14. Gün:</label>
+                <input type="number" id="gun14" name="gun14" step="0.01">
+                <label for="gun15">15. Gün:</label>
+                <input type="number" id="gun15" name="gun15" step="0.01">
+                <label for="gun16">16. Gün:</label>
+                <input type="number" id="gun16" name="gun16" step="0.01">
+                <label for="gun17">17. Gün:</label>
+                <input type="number" id="gun17" name="gun17" step="0.01">
+                <label for="gun18">18. Gün:</label>
+                <input type="number" id="gun18" name="gun18" step="0.01">
+                <label for="gun19">19. Gün:</label>
+                <input type="number" id="gun19" name="gun19" step="0.01">
+                <label for="gun20">20. Gün:</label>
+                <input type="number" id="gun20" name="gun20" step="0.01">
+                <label for="gun21">21. Gün:</label>
+                <input type="number" id="gun21" name="gun21" step="0.01">
+                <label for="gun22">22. Gün:</label>
+                <input type="number" id="gun22" name="gun22" step="0.01">
+                <label for="gun23">23. Gün:</label>
+                <input type="number" id="gun23" name="gun23" step="0.01">
+                <label for="gun24">24. Gün:</label>
+                <input type="number" id="gun24" name="gun24" step="0.01">
+                <label for="gun25">25. Gün:</label>
+                <input type="number" id="gun25" name="gun25" step="0.01">
+                <label for="gun26">26. Gün:</label>
+                <input type="number" id="gun26" name="gun26" step="0.01">
+                <label for="gun27">27. Gün:</label>
+                <input type="number" id="gun27" name="gun27" step="0.01">
+                <label for="gun28">28. Gün:</label>
+                <input type="number" id="gun28" name="gun28" step="0.01">
+                <label for="gun29">29. Gün:</label>
+                <input type="number" id="gun29" name="gun29" step="0.01">
+                <label for="gun30">30. Gün:</label>
+                <input type="number" id="gun30" name="gun30" step="0.01">
+                <label for="gun31">31. Gün:</label>
+                <input type="number" id="gun31" name="gun31" step="0.01">
+            
+                <label for="ortalama">Ortalama:</label>
+                <input type="number" id="ortalama" name="ortalama" step="0.01">
+
+                <label for="dosyaAdiK">Kaydedilecek Dosya Adı:</label>
+                <input type="text" id="dosyaAdiK" name="dosyaAdiK">
+
+                <button type="submit">Kaydet</button>
+
+                <label for="dosyaAdiG">Gösterilecek Dosya Adı:</label>
+                <input type="text" id="dosyaAdiG" name="dosyaAdiG">
+
+                <button type="button">Göster</button>
+            </form>
+            
+            <p id="toplamCiro">1 Aylık Toplam Ciro: <span id="toplamCiroDegeri">0</span> TL</   p>
+            <p id="ortalamaCiro">1 Ay/Gün Ortalama Ciro: <span id="ortalamaCiroDegeri">0</span> TL</p>
+            <p id="istenenOrtalama">1 Aylık İstenen Toplam Ciro: <span id="istenenCiroDegeri">0</span> TL</p>
+            <p id="gunlukFark">Günlük Ciro Farkı: <span id="gunlukFarkDegeri">0</span> TL</p>
+            <p id="aylikFark">Aylık Ciro Farkı: <span id="aylikFarkDegeri">0</span> TL</p>
+    </div>
+    </main> 
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+    <script src="main1.js"></script>
+</body>
+</html>

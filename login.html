@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="ring">
+        <i style="--clr:#00ff0a;"></i>
+        <i style="--clr:#ff0057;"></i>
+        <i style="--clr:#fffd44;"></i>
+        <div class="login">
+          <h2>Login</h2>
+          <div class="inputBx">
+            <input type="text" id="username" placeholder="Username">
+          </div>
+          <div class="inputBx">
+            <input type="password" id="password" placeholder="Password">
+          </div>
+          <div class="inputBx">
+            <input type="button" id="signInButton" value="Sign in">
+          </div>
+          <div id="errorMessage" style="display: none; color: red;">Kullanıcı adı veya şifre yanlış!</div>
+        </div>
+      </div>
+    <script src="login.js"></script>
+</body>
+</html>
